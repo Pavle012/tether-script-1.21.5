@@ -13,6 +13,21 @@ run_quietly() {
 }
 
 setup() {
+if [ -d "$PREFIX/var/lib/proot-distro/installed-rootfs/ubuntu" ]; then
+  echo "Ubuntu is installed."
+else
+  pkg install -y proot-distro && proot-distro install ubuntu
+fi
+
+UPDATED_FLAG="$PREFIX/var/lib/proot-distro/ubuntu-updated.flag"
+
+if [ ! -f "$UPDATED_FLAG" ]; then
+  proot-distro login ubuntu -- bash -c "apt update && apt upgrade -y"
+  touch "$UPDATED_FLAG"
+fi
+
+proot-distro login ubuntu -- bash -c "apt install -y curl git micro"
+
     status "Setting up Minecraft server environment..."
     
     mkdir -p ~/tether
