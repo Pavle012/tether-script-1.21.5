@@ -34,8 +34,7 @@ proot-distro login ubuntu -- bash -c "apt install -y curl git micro"
     cd ~/tether
     
     status "Downloading Paper server jar..."
-    run_quietly curl -s -OL 
-https://api.papermc.io/v2/projects/paper/versions/1.21.5/builds/114/downloads/paper-1.21.5-114.jar
+    run_quietly curl -s -OL https://api.papermc.io/v2/projects/paper/versions/1.21.5/builds/114/downloads/paper-1.21.5-114.jar
 
     status "Downloading Java Runtime Environment..."
     run_quietly curl -s -OL https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.6_7.tar.gz
