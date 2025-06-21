@@ -7,14 +7,14 @@ A simple shell script for **Termux** to start Minecraft servers easily.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/lordaimer/tether-script.git
+git clone https://github.com/Pavle012/tether-script-1.21.5.git
 ```
    
 
 2. Change into the script directory:
 
 ```bash
-cd tether-script
+cd tether-script-1.21.5
 ```
 
 3. Make the script executable:
