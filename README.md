@@ -2,7 +2,17 @@
 
 A simple shell script for **Termux** to start Minecraft servers easily.
 
-## Usage
+## Installation
+
+### With cURL:
+
+Just run this command:
+
+```bash
+bash <(curl -s https://raw.githubusercontent.com/lordaimer/tether-script/main/install.sh)
+```
+
+### Manual:
 
 1. Clone the repository:
 
