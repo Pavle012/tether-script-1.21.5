@@ -1,8 +1,20 @@
-# Tether Script
+# Tether Script for Minecraft Paper 1.21.5
 
 A simple shell script for **Termux** to start Minecraft servers easily.
 
-## Usage
+## Installation 
+
+### 1. Using cURL:
+
+Just run this command:
+
+```bash
+bash <(curl -s https://raw.githubusercontent.com/Pavle012/tether-script-1.21.5/main/install.sh)
+```
+And just wait and it should work!
+
+
+### 1. Manual:
 
 1. Clone the repository:
 
