@@ -78,7 +78,7 @@ if [ "$(basename "$(pwd)")" != "tether" ]; then
 fi
 
 status "Starting Minecraft server..."
-proot-distro login ubuntu --bind ~/tether:/root -- bash -c 'cd /root && ./jdk-21.0.6+7-jre/bin/java -Xmx3G -jar  paper-1.21.5-114.jar nogui'
+proot-distro login ubuntu --bind ~/tether:/root -- bash -c 'cd /root && ./jdk-21.0.6+7-jre/bin/java -Xmx3G -jar paper-1.21.5-114.jar nogui'
 EOF
 
     chmod +x ~/tether/run.sh
